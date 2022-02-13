@@ -1,0 +1,16 @@
+name: shell command
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: echo a string
+      run: echo "hello world"
