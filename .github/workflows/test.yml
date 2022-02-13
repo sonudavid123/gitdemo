@@ -14,3 +14,7 @@ jobs:
     steps:
     - name: echo a string
       run: echo "hello world"
+    - name: multiline statments
+      run: |
+        node -v
+        npm -v
